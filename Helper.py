@@ -2,9 +2,8 @@
 import argparse
     
 def help_message():
-	parser = argparse.ArgumentParser(description='This is a open-source python script for simulating login activity of Jingdong shopping market(https://www.jd.com)  \
-									, and simulating others thing like detecting good stock, buying,  \
-									, etc')
+	parser = argparse.ArgumentParser(description='This is a open-source python script for simulating login activity of JD.COM market(https://www.jd.com)  \
+										, and simulating others thing like detecting good stock, buying, etc')
 	parser.add_argument('-t', '--logintype', 
 	                   help='the way you want to login JD:\n\t \
 	                   		 1: qrcode\n\t 2: password',

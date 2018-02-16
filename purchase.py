@@ -572,7 +572,7 @@ class Purchase:
         #返回
         pass
 
-    def toorder(self, submit = self.submitflag):
+    def toorder(self, issubmit = False):
         # get order info detail, and submit order
         print (u'{0} > 订单详情'.format(time.ctime()))
 
@@ -604,7 +604,7 @@ class Purchase:
             print (re_address)
             self.order_panel()
             # --------------- debug --------------------
-            if submit:
+            if (issubmit or self.submitflag):
                 self.submit_order()
         except Exception as e:
             print('ERROR{} > tocart(): '.format(time.ctime()) + str(e))
