@@ -23,9 +23,9 @@
    - `python main.py --help` 
 2. 两种登录方式  
    - 扫码登录  
-     `python main.py`  
+     `python main.py -t 1`  
    - 账密登录  
-     `python -u yourusername -p yourpassword`    
+     `python -t 2 -u yourusername -p yourpassword`    
 3. 其他
    - 编辑main.main()  
    
