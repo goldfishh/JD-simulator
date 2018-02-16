@@ -1,12 +1,36 @@
-# JD-simulator
-基于Python 3 京东商城模拟工具
-第三方库依赖:
-  requests
-  BeautifulSoup
-  lxml
-  pickle
-## 主要功能
-模拟京东商城的两种登录请求、查询商品信息、修改购物车以及订单页面信息、提交订单、获取优惠券等服务
+
+> A [JD.COM(京东) market](https://www.jd.com/) simulator tool based on Python 3  
+
+## Environment
+- Python 3.6.1
+- Third-party library:  
+  - Python HTTP [Requests](https://github.com/requests/requests) for Humans
+  - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+  - [lxml](http://lxml.de/)
+  - [pickle](https://docs.python.org/3/library/pickle.html)
+
+## Setup
+1. Downloading requirements.txt
+2. pip install -r requirements.txt    
+
+## Run
+1. cd JD_simulator
+2. python main.py
+
+## How to simulate  
+1. 寻找帮助   
+   - `python main.py -h`    
+   - `python main.py --help` 
+2. 两种登录方式  
+   - 扫码登录  
+     `python main.py`  
+   - 账密登录  
+     `python -u yourusername -p yourpassword`    
+3. 其他
+   - 编辑main.main()  
+   
+    
+------  
 ## 目前已实现功能
 #大部分功能已有思路, 但是搬砖太累,接下来可能会只更新自己用到的功能  
 > 2.9 添加Plus专享价格信息  
@@ -40,6 +64,4 @@
 >   模拟 预售 抢购 等商品的定时购买  
 >   更友好的助手函数  
 > 
->   模拟获取优惠券功能  
-
->   API文档填写  
+>   模拟获取优惠券功能   
