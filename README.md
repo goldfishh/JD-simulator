@@ -1,6 +1,8 @@
 
 > A [JD.COM(京东) market](https://www.jd.com/) simulator tool based on Python 3  
 
+[![Python](https://img.shields.io/badge/Python-3.6%2B-red.svg)](https://www.python.org)
+
 ## Environment
 - Python 3.6.1
 - Third-party library:  
@@ -10,26 +12,40 @@
   - [pickle](https://docs.python.org/3/library/pickle.html)
 
 ## Setup
-1. Downloading requirements.txt
-2. pip install -r requirements.txt    
+1. Downloading zip file
+2. unzip
+3. cd JD-simulator*
+2. pip install -r requirements.txt    
 
 ## Run
-1. cd JD_simulator
+1. editing main.main() function
 2. python main.py
 
 ## How to simulate  
-1. 寻找帮助   
+1. Searching for helping   
    - `python main.py -h`    
    - `python main.py --help` 
-2. 两种登录方式  
-   - 扫码登录  
-     `python main.py -t 1`  
-   - 账密登录  
+2. Logging in
+   - Scanning  
+     `python main.py -t 1`  (注: 二维码背景需为白色!)
+   - Normal means  
      `python -t 2 -u yourusername -p yourpassword`    
-3. 其他
-   - 编辑main.main()  
+3. Other  
+   - editting main.main()  
    
-    
+## How to edit the main.main()  
+1. 购物车模拟
+``` 
+def main(options, cookies):  
+    # build a object for purchasing.  
+    pc = Purchase(options, cookies)  
+    pc.cart_detail()  
+    pass  
+    
+python main.py ......
+```
+2. 
+
 ------  
 ## 目前已实现功能
 #大部分功能已有思路, 但是搬砖太累,接下来可能会只更新自己用到的功能  
