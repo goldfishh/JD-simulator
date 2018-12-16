@@ -1,4 +1,5 @@
-10个星的话试一试继续开发这个项目?
+账密登录已失效
+20个星的话试一试继续开发这个项目?
 > A [JD.COM(京东) market](https://www.jd.com/) simulator tool based on Python 3  
 
 [![Python](https://img.shields.io/badge/Python-3.6%2B-red.svg)](https://www.python.org)
